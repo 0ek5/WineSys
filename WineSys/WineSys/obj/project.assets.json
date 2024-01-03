@@ -2,6 +2,27 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Goblinfactory.Konsole/6.2.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Goblinfactory.Konsole.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Goblinfactory.Konsole.dll": {}
+        }
+      },
+      "Goblinfactory.Konsole.Windows/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Goblinfactory.Konsole": "5.0.0"
+        },
+        "compile": {
+          "lib/net461/Goblinfactory.Konsole.Platform.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/net461/Goblinfactory.Konsole.Platform.Windows.dll": {}
+        }
+      },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
@@ -66,6 +87,34 @@
     }
   },
   "libraries": {
+    "Goblinfactory.Konsole/6.2.2": {
+      "sha512": "OIcxcMX/TkVVX4fzaRdDr7lmJB15REY2H631Er8I0e8r4Pf4fsAYx+kvjbbHeCNLgb8bqCua0w/0esOZLZDHaA==",
+      "type": "package",
+      "path": "goblinfactory.konsole/6.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "goblinfactory.konsole.6.2.2.nupkg.sha512",
+        "goblinfactory.konsole.nuspec",
+        "konsole.png",
+        "lib/netstandard2.0/Goblinfactory.Konsole.dll"
+      ]
+    },
+    "Goblinfactory.Konsole.Windows/5.0.0": {
+      "sha512": "OoECOmpoe2cIinLt5cUh/nvWE9XOXwopx2yrtT0o+JXYujU9Z8MJu+WzWK7IIn1MNJblKYaUk/sqvRr/FVoPYA==",
+      "type": "package",
+      "path": "goblinfactory.konsole.windows/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "goblinfactory.konsole.windows.5.0.0.nupkg.sha512",
+        "goblinfactory.konsole.windows.nuspec",
+        "lib/net461/Goblinfactory.Konsole.Platform.Windows.dll",
+        "progress.png"
+      ]
+    },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "sha512": "/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
       "type": "package",
@@ -202,6 +251,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Goblinfactory.Konsole >= 6.2.2",
+      "Goblinfactory.Konsole.Windows >= 5.0.0",
       "System.Text.Json >= 8.0.0"
     ]
   },
@@ -244,6 +295,14 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Goblinfactory.Konsole": {
+            "target": "Package",
+            "version": "[6.2.2, )"
+          },
+          "Goblinfactory.Konsole.Windows": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
           "System.Text.Json": {
             "target": "Package",
             "version": "[8.0.0, )"
@@ -268,5 +327,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Goblinfactory.Konsole.Windows 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Goblinfactory.Konsole.Windows",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

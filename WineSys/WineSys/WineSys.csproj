@@ -7,4 +7,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Goblinfactory.Konsole" Version="6.2.2" />
+    <PackageReference Include="Goblinfactory.Konsole.Windows" Version="5.0.0" />
+    <PackageReference Include="System.Text.Json" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="DVI_Access_Lib">
+      <HintPath>..\..\DVI_Access_Lib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

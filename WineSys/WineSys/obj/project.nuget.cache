@@ -1,12 +1,25 @@
 {
   "version": 2,
-  "dgSpecHash": "PQapLXfknYmdvhR4PBk5eGmExujTRgvBv0/eA14qRw42LuX1z9B3MNhJex0Dx4jG3UJThdAfyRVY+67d7xMLhw==",
+  "dgSpecHash": "co07+KDcJduyN0udPvhlMVzTFmF3XRLWsdNq6Y/z+StICmrLCfXZz5J0xZx+8SPqFumopRJymQSZjoK230HIWg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bruger\\OneDrive - TECHCOLLEGE\\repos\\0ek5.io\\WineSys\\WineSys\\WineSys\\WineSys.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Bruger\\.nuget\\packages\\goblinfactory.konsole\\6.2.2\\goblinfactory.konsole.6.2.2.nupkg.sha512",
+    "C:\\Users\\Bruger\\.nuget\\packages\\goblinfactory.konsole.windows\\5.0.0\\goblinfactory.konsole.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\Bruger\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\Bruger\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\Bruger\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Goblinfactory.Konsole.Windows 5.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Goblinfactory.Konsole.Windows",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

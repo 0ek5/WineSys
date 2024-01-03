@@ -40,6 +40,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Goblinfactory.Konsole": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            },
+            "Goblinfactory.Konsole.Windows": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "System.Text.Json": {
               "target": "Package",
               "version": "[8.0.0, )"

@@ -1,0 +1,128 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WineSys/1.0.0": {
+        "dependencies": {
+          "Goblinfactory.Konsole": "6.2.2",
+          "Goblinfactory.Konsole.Windows": "5.0.0",
+          "System.Text.Json": "8.0.0",
+          "DVI_Access_Lib": "1.0.0.0"
+        },
+        "runtime": {
+          "WineSys.dll": {}
+        }
+      },
+      "Goblinfactory.Konsole/6.2.2": {
+        "runtime": {
+          "lib/netstandard2.0/Goblinfactory.Konsole.dll": {
+            "assemblyVersion": "6.2.2.0",
+            "fileVersion": "6.2.2.0"
+          }
+        }
+      },
+      "Goblinfactory.Konsole.Windows/5.0.0": {
+        "dependencies": {
+          "Goblinfactory.Konsole": "6.2.2"
+        },
+        "runtime": {
+          "lib/net461/Goblinfactory.Konsole.Platform.Windows.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
+          }
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "System.Text.Encodings.Web/8.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/System.Text.Encodings.Web.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll": {
+            "rid": "browser",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "System.Text.Json/8.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encodings.Web": "8.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/System.Text.Json.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
+      "DVI_Access_Lib/1.0.0.0": {
+        "runtime": {
+          "DVI_Access_Lib.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WineSys/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Goblinfactory.Konsole/6.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OIcxcMX/TkVVX4fzaRdDr7lmJB15REY2H631Er8I0e8r4Pf4fsAYx+kvjbbHeCNLgb8bqCua0w/0esOZLZDHaA==",
+      "path": "goblinfactory.konsole/6.2.2",
+      "hashPath": "goblinfactory.konsole.6.2.2.nupkg.sha512"
+    },
+    "Goblinfactory.Konsole.Windows/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OoECOmpoe2cIinLt5cUh/nvWE9XOXwopx2yrtT0o+JXYujU9Z8MJu+WzWK7IIn1MNJblKYaUk/sqvRr/FVoPYA==",
+      "path": "goblinfactory.konsole.windows/5.0.0",
+      "hashPath": "goblinfactory.konsole.windows.5.0.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yev/k9GHAEGx2Rg3/tU6MQh4HGBXJs70y7j1LaM1i/ER9po+6nnQ6RRqTJn1E7Xu0fbIFK80Nh5EoODxrbxwBQ==",
+      "path": "system.text.encodings.web/8.0.0",
+      "hashPath": "system.text.encodings.web.8.0.0.nupkg.sha512"
+    },
+    "System.Text.Json/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OdrZO2WjkiEG6ajEFRABTRCi/wuXQPxeV6g8xvUJqdxMvvuCCEk86zPla8UiIQJz3durtUEbNyY/3lIhS0yZvQ==",
+      "path": "system.text.json/8.0.0",
+      "hashPath": "system.text.json.8.0.0.nupkg.sha512"
+    },
+    "DVI_Access_Lib/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
