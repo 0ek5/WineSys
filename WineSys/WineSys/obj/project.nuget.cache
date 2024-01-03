@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "PQapLXfknYmdvhR4PBk5eGmExujTRgvBv0/eA14qRw42LuX1z9B3MNhJex0Dx4jG3UJThdAfyRVY+67d7xMLhw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Bruger\\OneDrive - TECHCOLLEGE\\repos\\0ek5.io\\WineSys\\WineSys\\WineSys\\WineSys.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bruger\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Bruger\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\Bruger\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
