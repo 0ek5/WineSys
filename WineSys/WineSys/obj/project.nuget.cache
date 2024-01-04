@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "Q+aAZNZdZTGytZpbLkFIDnwHXfZxQxBDMF3Ms91olKz2FlAZjexnxk3nGIKxnnj3uEOxjBVWrgHi2sNXxB5zzA==",
+  "dgSpecHash": "co07+KDcJduyN0udPvhlMVzTFmF3XRLWsdNq6Y/z+StICmrLCfXZz5J0xZx+8SPqFumopRJymQSZjoK230HIWg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\repos\\css\\css-exercises\\WineSys\\WineSys\\WineSys\\WineSys.csproj",
+  "projectFilePath": "C:\\Users\\Bruger\\OneDrive - TECHCOLLEGE\\repos\\0ek5.io\\WineSys\\WineSys\\WineSys\\WineSys.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\user\\.nuget\\packages\\goblinfactory.konsole\\6.2.2\\goblinfactory.konsole.6.2.2.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\goblinfactory.konsole.windows\\5.0.0\\goblinfactory.konsole.windows.5.0.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+    "C:\\Users\\Bruger\\.nuget\\packages\\goblinfactory.konsole\\6.2.2\\goblinfactory.konsole.6.2.2.nupkg.sha512",
+    "C:\\Users\\Bruger\\.nuget\\packages\\goblinfactory.konsole.windows\\5.0.0\\goblinfactory.konsole.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\Bruger\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Bruger\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\Bruger\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
   ],
   "logs": [
     {
