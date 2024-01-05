@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using DVI_Access_Lib;
 using Konsole;
 
+// BETA 05.01.24
 
 namespace DVI_Demo
 {
@@ -103,19 +104,21 @@ namespace DVI_Demo
                 winCurrTempCurrHum.Clear(); 
                 winCurrTempCurrHum.WriteLine(climate.CurrTemp().ToString() + "°" + "                                " + climate.CurrHum().ToString() + "%");
 
+                //Equal or greater then on warnings.
+                
                 if (climate.CurrTemp() > climate.MaxTemp())
                 {
                     winCurrTempCurrHum.WriteLine("HIGH TEMP!");
                     Console.Beep();
                 }
                 
-                if (climate.CurrTemp() < climate.MinTemp())
+                if (climate.CurrTemp() <= climate.MinTemp())
                 {   
                     winCurrTempCurrHum.WriteLine("LOW TEMP!");
                     Console.Beep();
                 }
 
-                if (climate.CurrTemp() > climate.MaxTemp())
+                if (climate.CurrTemp() >= climate.MaxTemp())
                 {
                     winCurrTempCurrHum.WriteLine("HIGH TEMP!");
                     Console.Beep();
