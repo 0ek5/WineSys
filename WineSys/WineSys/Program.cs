@@ -119,6 +119,7 @@ while (true)
     Box3.Clear();
     Box3.WriteLine("Danmark " + "    " + dkTimeNow + "\n" + "Californien " + caliTimeNow + "\n" + "Australien " + " " + ausTimeNow);
 
+    // RSS Feed
 
     var feed = await FeedReader.ReadAsync("https://www.dr.dk/nyheder/service/feeds/senestenyt");
     Box4.Clear();
@@ -132,7 +133,7 @@ while (true)
     winCurrTempCurrHum2.Clear();
     winCurrTempCurrHum2.WriteLine(climate.CurrHum().ToString("0.00") + "%");
 
-    //Equal or greater then on warnings.
+
 
     if (climate.CurrTemp() > climate.MaxTemp())
     {
@@ -178,5 +179,5 @@ while (true)
         winCurrTempCurrHum2.WriteLine("WORKING");
     }
 
-    await Task.Delay(5000);
+    await Task.Delay(2500);
 }
