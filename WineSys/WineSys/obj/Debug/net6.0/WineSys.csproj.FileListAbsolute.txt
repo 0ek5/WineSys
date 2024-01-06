@@ -43,3 +43,4 @@ C:\Users\user\repos\css\css-exercises\WineSys\WineSys\WineSys\obj\Debug\net6.0\W
 C:\Users\user\repos\css\css-exercises\WineSys\WineSys\WineSys\obj\Debug\net6.0\WineSys.genruntimeconfig.cache
 C:\Users\user\repos\css\css-exercises\WineSys\WineSys\WineSys\obj\Debug\net6.0\ref\WineSys.dll
 C:\Users\Bruger\OneDrive - TECHCOLLEGE\repos\0ek5.io\WineSys\WineSys\WineSys\bin\Debug\net6.0\CodeHollow.FeedReader.dll
+C:\Users\user\repos\css\css-exercises\WineSys\WineSys\WineSys\bin\Debug\net6.0\CodeHollow.FeedReader.dll

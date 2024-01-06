@@ -93,7 +93,7 @@ while (true)
 
     Vin.Clear();
     foreach (Wine wine in stock.WinesOnStock())
-        Vin.WriteLine("\n" + wine.WineName);
+        Vin.WriteLine("\n" + wine.WineName + " " + "| Antal på lager: " + wine.NumInStock);
 
     winListWindow.Clear();
     foreach (Wine wine in stock.StockOverThreshold())
@@ -109,12 +109,6 @@ while (true)
     Box3.WriteLine("Danmark " + "    " + dkTimeNow + "\n" + "Californien " + caliTimeNow + "\n" + "Australien " + " " + ausTimeNow);
 
     // RSS Feed
-
-    var feed = await FeedReader.ReadAsync("https://www.dr.dk/nyheder/service/feeds/senestenyt");
-    Box4.Clear();
-    foreach (var item in feed.Items)
-    
-        Box4.WriteLine(item.Title + "\n");
 
     winCurrTempCurrHum.Clear();
     winCurrTempCurrHum.WriteLine(climate.CurrTemp().ToString("0.00") + "°");
@@ -166,6 +160,14 @@ while (true)
     if (climate.CurrHum() < climate.MaxHum() && climate.CurrHum() > climate.MinHum())
     {
         winCurrTempCurrHum2.WriteLine("WORKING");
+    }
+
+    var feed = await FeedReader.ReadAsync("https://www.dr.dk/nyheder/service/feeds/senestenyt");
+    Box4.Clear();
+    foreach (var item in feed.Items)
+    {
+        await Task.Delay(2300);
+        Box4.WriteLine(item.Title + "\n");
     }
 
     await Task.Delay(2500);
