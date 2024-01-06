@@ -52,7 +52,31 @@ var winListWindow2 = Window.OpenBox("Lagerbeholdning lav", 5, 19, 50, 13, new Bo
     Title = new Colors(ConsoleColor.White, ConsoleColor.Red)
 });
 
-var Vin = Window.OpenBox("Lagerbeholdning", 55, 2, 100, 30, new BoxStyle()
+var Vin = Window.OpenBox("Lagerbeholdning", 55, 2, 50, 30, new BoxStyle()
+{
+    ThickNess = LineThickNess.Double,
+    Title = new Colors(ConsoleColor.White, ConsoleColor.Red)
+
+});
+
+
+
+
+var Vin1 = Window.OpenBox("Antal", 105, 2, 15, 30, new BoxStyle()
+{
+    ThickNess = LineThickNess.Double,
+    Title = new Colors(ConsoleColor.White, ConsoleColor.Red)
+
+});
+
+var Vin2 = Window.OpenBox("Indkøbspris", 120, 2, 15, 30, new BoxStyle()
+{
+    ThickNess = LineThickNess.Double,
+    Title = new Colors(ConsoleColor.White, ConsoleColor.Red)
+
+});
+
+var Vin3 = Window.OpenBox("Avance", 135, 2, 20, 30, new BoxStyle()
 {
     ThickNess = LineThickNess.Double,
     Title = new Colors(ConsoleColor.White, ConsoleColor.Red)
@@ -91,9 +115,29 @@ DVI_Stock stock = new DVI_Stock("http://docker.data.techcollege.dk:5051");
 while (true)
 {
 
+
+
+
+
     Vin.Clear();
     foreach (Wine wine in stock.WinesOnStock())
-        Vin.WriteLine("\n" + wine.WineName + " " + "| Antal på lager: " + wine.NumInStock);
+        Vin.WriteLine("\n" + wine.WineName);
+
+    Vin1.Clear();
+    foreach (Wine wine in stock.WinesOnStock())
+        Vin1.WriteLine("\n" + wine.NumInStock.ToString());
+
+    Vin2.Clear();
+    foreach (Wine wine in stock.WinesOnStock())
+        Vin2.WriteLine("\n" + wine.PurchasePrice + " DKK");
+
+    Vin3.Clear();
+    foreach (Wine wine in stock.WinesOnStock())
+        Vin3.WriteLine("\n" + wine.MarkUp * 100 + "%");
+
+
+
+
 
     winListWindow.Clear();
     foreach (Wine wine in stock.StockOverThreshold())
@@ -118,55 +162,46 @@ while (true)
 
 
 
-    if (climate.CurrTemp() > climate.MaxTemp())
-    {
-        winCurrTempCurrHum.WriteLine("HIGH TEMP!");
-        Console.Beep();
-    }
 
     if (climate.CurrTemp() <= climate.MinTemp())
     {
-        Console.ForegroundColor = ConsoleColor.Red;
-        winCurrTempCurrHum.WriteLine("LOW TEMP!");
-        Console.ForegroundColor = ConsoleColor.White;
+        winCurrTempCurrHum.WriteLine("LAV TEMP!");
         Console.Beep();
     }
 
     if (climate.CurrTemp() >= climate.MaxTemp())
     {
-        Console.ForegroundColor = ConsoleColor.Red;
-        winCurrTempCurrHum.WriteLine("HIGH TEMP!");
-        Console.ForegroundColor = ConsoleColor.White;
+        winCurrTempCurrHum.WriteLine("HØJ TEMP!");
         Console.Beep();
     }
 
     if (climate.CurrHum() < climate.MinHum())
     {
-        winCurrTempCurrHum2.WriteLine("LOW HUM!");
+        winCurrTempCurrHum2.WriteLine("LAV HUM!");
         Console.Beep();
     }
 
     if (climate.CurrTemp() > climate.MaxHum())
     {
-        winCurrTempCurrHum2.WriteLine("HIGH HUM!");
+        winCurrTempCurrHum2.WriteLine("HØJ HUM!");
         Console.Beep();
     }
 
     if (climate.CurrTemp() < climate.MaxTemp() && climate.CurrTemp() > climate.MinTemp())
     {
-        winCurrTempCurrHum.WriteLine("WORKING");
+        winCurrTempCurrHum.WriteLine("ALT I ORDEN!");
     }
 
     if (climate.CurrHum() < climate.MaxHum() && climate.CurrHum() > climate.MinHum())
     {
-        winCurrTempCurrHum2.WriteLine("WORKING");
+        winCurrTempCurrHum2.WriteLine("ALT I ORDEN!");
     }
 
     var feed = await FeedReader.ReadAsync("https://www.dr.dk/nyheder/service/feeds/senestenyt");
     Box4.Clear();
     foreach (var item in feed.Items)
     {
-        await Task.Delay(2300);
+        await Task.Delay(2500);
         Box4.WriteLine(item.Title + "\n");
     }
 
