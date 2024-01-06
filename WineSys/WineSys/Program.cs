@@ -165,45 +165,45 @@ while (true)
 
     if (climate.CurrTemp() <= climate.MinTemp())
     {
-        winCurrTempCurrHum.WriteLine("LAV TEMP!");
+        winCurrTempCurrHum.WriteLine(ConsoleColor.Red, "LAV TEMP!");
         Console.Beep();
     }
 
     if (climate.CurrTemp() >= climate.MaxTemp())
     {
-        winCurrTempCurrHum.WriteLine("HØJ TEMP!");
+        winCurrTempCurrHum.WriteLine(ConsoleColor.Red, "HØJ TEMP!");
         Console.Beep();
     }
 
     if (climate.CurrHum() < climate.MinHum())
     {
-        winCurrTempCurrHum2.WriteLine("LAV HUM!");
+        winCurrTempCurrHum2.WriteLine(ConsoleColor.Red, "LAV HUM!");
         Console.Beep();
     }
 
     if (climate.CurrTemp() > climate.MaxHum())
     {
-        winCurrTempCurrHum2.WriteLine("HØJ HUM!");
+        winCurrTempCurrHum2.WriteLine(ConsoleColor.Red, "HØJ HUM!");
         Console.Beep();
     }
 
     if (climate.CurrTemp() < climate.MaxTemp() && climate.CurrTemp() > climate.MinTemp())
     {
-        winCurrTempCurrHum.WriteLine("ALT I ORDEN!");
+        winCurrTempCurrHum.WriteLine(ConsoleColor.Green, "ALT I ORDEN!");
     }
 
     if (climate.CurrHum() < climate.MaxHum() && climate.CurrHum() > climate.MinHum())
     {
-        winCurrTempCurrHum2.WriteLine("ALT I ORDEN!");
+        winCurrTempCurrHum2.WriteLine(ConsoleColor.Green, "ALT I ORDEN!");
     }
 
     var feed = await FeedReader.ReadAsync("https://www.dr.dk/nyheder/service/feeds/senestenyt");
     Box4.Clear();
     foreach (var item in feed.Items)
     {
-        await Task.Delay(2500);
+        await Task.Delay(3000);
         Box4.WriteLine(item.Title + "\n");
     }
 
-    await Task.Delay(2500);
+    await Task.Delay(20);
 }
