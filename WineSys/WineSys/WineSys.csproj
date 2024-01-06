@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CodeHollow.FeedReader" Version="1.2.6" />
     <PackageReference Include="Goblinfactory.Konsole" Version="6.2.2" />
     <PackageReference Include="Goblinfactory.Konsole.Windows" Version="5.0.0" />
     <PackageReference Include="System.Text.Json" Version="8.0.0" />
