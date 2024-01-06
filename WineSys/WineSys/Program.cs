@@ -133,7 +133,7 @@ while (true)
 
     Vin3.Clear();
     foreach (Wine wine in stock.WinesOnStock())
-        Vin3.WriteLine("\n" + wine.MarkUp * 100 + "%");
+        Vin3.WriteLine("\n" + wine.PurchasePrice * wine.MarkUp + " DKK" + " | " + wine.MarkUp * 100 + "%");
 
 
 
