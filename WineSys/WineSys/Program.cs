@@ -14,7 +14,7 @@ oooooo   oooooo     oooo  o8o                         .oooooo..o
       `8'      `8'       o888o o888o o888o `Y8bod8P' 8""""88888P'      .8'     8""""888P' 
                                                                  .o..P'               
                                                                  `Y8P'   GRUPPE I ©          
-                                                                                                      ";
+                                                               3MK4N1 K4K4N0 0EK5                                        ";
 
 Console.WriteLine(asciiart);
 await Task.Delay(3000);
@@ -24,7 +24,6 @@ Console.Clear();
 Console.ForegroundColor = ConsoleColor.White;
 Console.BackgroundColor = ConsoleColor.Black;
 
-// Remember to add time and date instead of only timezone!!!
 
 TimeZoneInfo dktime = TimeZoneInfo.FindSystemTimeZoneById("Romance Standard Time");
 TimeZoneInfo calitime = TimeZoneInfo.FindSystemTimeZoneById("Pacific Standard Time");
@@ -152,7 +151,6 @@ while (true)
     Box3.Clear();
     Box3.WriteLine("Danmark " + "    " + dkTimeNow + "\n" + "Californien " + caliTimeNow + "\n" + "Australien " + " " + ausTimeNow);
 
-    // RSS Feed
 
     winCurrTempCurrHum.Clear();
     winCurrTempCurrHum.WriteLine(climate.CurrTemp().ToString("0.00") + "°");
@@ -166,25 +164,37 @@ while (true)
     if (climate.CurrTemp() <= climate.MinTemp())
     {
         winCurrTempCurrHum.WriteLine(ConsoleColor.Red, "LAV TEMP!");
-        Console.Beep();
+        for (int i = 0; i < 10; i++)
+        {
+            Console.Beep(300, 500);
+        }
     }
 
     if (climate.CurrTemp() >= climate.MaxTemp())
     {
         winCurrTempCurrHum.WriteLine(ConsoleColor.Red, "HØJ TEMP!");
-        Console.Beep();
+        for (int i = 0; i < 10; i++)
+        {
+            Console.Beep(300, 500);
+        }
     }
 
     if (climate.CurrHum() < climate.MinHum())
     {
         winCurrTempCurrHum2.WriteLine(ConsoleColor.Red, "LAV HUM!");
-        Console.Beep();
+        for (int i = 0; i < 10; i++)
+        {
+            Console.Beep(300, 500);
+        }
     }
 
     if (climate.CurrTemp() > climate.MaxHum())
     {
         winCurrTempCurrHum2.WriteLine(ConsoleColor.Red, "HØJ HUM!");
-        Console.Beep();
+        for (int i = 0; i < 10; i++)
+        {
+            Console.Beep(300, 500);
+        }
     }
 
     if (climate.CurrTemp() < climate.MaxTemp() && climate.CurrTemp() > climate.MinTemp())
@@ -201,7 +211,7 @@ while (true)
     Box4.Clear();
     foreach (var item in feed.Items)
     {
-        await Task.Delay(3000);
+        await Task.Delay(2500);
         Box4.WriteLine(item.Title + "\n");
     }
 
