@@ -290,19 +290,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bruger\\.nuget\\packages\\": {}
+    "C:\\Users\\TKemi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bruger\\OneDrive - TECHCOLLEGE\\repos\\0ek5.io\\WineSys\\WineSys\\WineSys\\WineSys.csproj",
+      "projectUniqueName": "C:\\gf2\\winesys\\WineSys\\WineSys\\WineSys.csproj",
       "projectName": "WineSys",
-      "projectPath": "C:\\Users\\Bruger\\OneDrive - TECHCOLLEGE\\repos\\0ek5.io\\WineSys\\WineSys\\WineSys\\WineSys.csproj",
-      "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bruger\\OneDrive - TECHCOLLEGE\\repos\\0ek5.io\\WineSys\\WineSys\\WineSys\\obj\\",
+      "projectPath": "C:\\gf2\\winesys\\WineSys\\WineSys\\WineSys.csproj",
+      "packagesPath": "C:\\Users\\TKemi\\.nuget\\packages\\",
+      "outputPath": "C:\\gf2\\winesys\\WineSys\\WineSys\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TKemi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

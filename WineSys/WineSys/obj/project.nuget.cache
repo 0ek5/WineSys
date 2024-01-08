@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "u+JBMTDSAVp8OpXOobpXcD955t/6NIl3xGhy9oIoJRizbafjghq+fKkDjYOS2GFQswzAS1rmrI8yvwj+h6GpsQ==",
+  "dgSpecHash": "n/E78Ll1EQKT61+dec8lzMMrRGpBEib2EVu9dELqNzT1kRcOWihM+XoYFEkBB3m3p9GL0zVeSSQOAAV37AXgQQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruger\\OneDrive - TECHCOLLEGE\\repos\\0ek5.io\\WineSys\\WineSys\\WineSys\\WineSys.csproj",
+  "projectFilePath": "C:\\gf2\\winesys\\WineSys\\WineSys\\WineSys.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Bruger\\.nuget\\packages\\codehollow.feedreader\\1.2.6\\codehollow.feedreader.1.2.6.nupkg.sha512",
-    "C:\\Users\\Bruger\\.nuget\\packages\\goblinfactory.konsole\\6.2.2\\goblinfactory.konsole.6.2.2.nupkg.sha512",
-    "C:\\Users\\Bruger\\.nuget\\packages\\goblinfactory.konsole.windows\\5.0.0\\goblinfactory.konsole.windows.5.0.0.nupkg.sha512",
-    "C:\\Users\\Bruger\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\Bruger\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
-    "C:\\Users\\Bruger\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+    "C:\\Users\\TKemi\\.nuget\\packages\\codehollow.feedreader\\1.2.6\\codehollow.feedreader.1.2.6.nupkg.sha512",
+    "C:\\Users\\TKemi\\.nuget\\packages\\goblinfactory.konsole\\6.2.2\\goblinfactory.konsole.6.2.2.nupkg.sha512",
+    "C:\\Users\\TKemi\\.nuget\\packages\\goblinfactory.konsole.windows\\5.0.0\\goblinfactory.konsole.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\TKemi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\TKemi\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\TKemi\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
   ],
   "logs": [
     {
