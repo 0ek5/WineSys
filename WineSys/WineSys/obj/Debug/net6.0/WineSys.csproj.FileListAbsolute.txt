@@ -44,17 +44,9 @@ C:\Users\user\repos\css\css-exercises\WineSys\WineSys\WineSys\obj\Debug\net6.0\W
 C:\Users\user\repos\css\css-exercises\WineSys\WineSys\WineSys\obj\Debug\net6.0\ref\WineSys.dll
 C:\Users\Bruger\OneDrive - TECHCOLLEGE\repos\0ek5.io\WineSys\WineSys\WineSys\bin\Debug\net6.0\CodeHollow.FeedReader.dll
 C:\Users\user\repos\css\css-exercises\WineSys\WineSys\WineSys\bin\Debug\net6.0\CodeHollow.FeedReader.dll
-C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\WineSys.exe
 C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\WineSys.deps.json
-C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\WineSys.runtimeconfig.json
 C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\WineSys.dll
 C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\WineSys.pdb
-C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\CodeHollow.FeedReader.dll
-C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\Goblinfactory.Konsole.dll
-C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\Goblinfactory.Konsole.Platform.Windows.dll
-C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\System.Text.Encodings.Web.dll
-C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\System.Text.Json.dll
-C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\DVI_Access_Lib.dll
 C:\gf2\winesys\WineSys\WineSys\obj\Debug\net6.0\WineSys.csproj.AssemblyReference.cache
 C:\gf2\winesys\WineSys\WineSys\obj\Debug\net6.0\WineSys.GeneratedMSBuildEditorConfig.editorconfig
@@ -65,5 +57,13 @@ C:\gf2\winesys\WineSys\WineSys\obj\Debug\net6.0\WineSys.csproj.CopyComplete
 C:\gf2\winesys\WineSys\WineSys\obj\Debug\net6.0\WineSys.dll
 C:\gf2\winesys\WineSys\WineSys\obj\Debug\net6.0\refint\WineSys.dll
 C:\gf2\winesys\WineSys\WineSys\obj\Debug\net6.0\WineSys.pdb
-C:\gf2\winesys\WineSys\WineSys\obj\Debug\net6.0\WineSys.genruntimeconfig.cache
 C:\gf2\winesys\WineSys\WineSys\obj\Debug\net6.0\ref\WineSys.dll
+C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\WineSys.exe
+C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\WineSys.runtimeconfig.json
+C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\CodeHollow.FeedReader.dll
+C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\Goblinfactory.Konsole.dll
+C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\Goblinfactory.Konsole.Platform.Windows.dll
+C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\System.Text.Json.dll
+C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\gf2\winesys\WineSys\WineSys\obj\Debug\net6.0\WineSys.genruntimeconfig.cache

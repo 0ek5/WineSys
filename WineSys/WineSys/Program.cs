@@ -4,7 +4,8 @@ using DVI_Access_Lib;
 using Konsole;
 using System.Runtime.InteropServices;       // hentet fra nettet for at maximize et console vindue
 
-public class WineSysMain
+
+public class Program
 {
     #region maxmimize kode fra nettet
     [DllImport("kernel32.dll", ExactSpelling = true)]
@@ -29,9 +30,11 @@ public class WineSysMain
                                                                          `Y8P'   GRUPPE I ©          
                                                                        3MK4N1 K4K4N0 0EK5                                        ";
 
+
+    private int rssWaitTime = 3500;
     // constructor, bruges når man laver en ny instance af en class, denne er tom
     // kan udelades da en tom constructor alligevel fyldes med default værdier for variable
-    public WineSysMain()
+    public Program()
     {
     }
 
@@ -41,27 +44,26 @@ public class WineSysMain
         ShowWindow(GetConsoleWindow(), MAXIMIZE);
 
         // vi starter vores loop som er en task, den kører sideløbende med koden
+        //await WineSysLoop();
         Task t = new Task(() => WineSysLoop());
         t.Start();
 
         // vi starter endnu en løkke for at forhindre at programmet lukker ned 
-        while(true)
+        while (true)
         {
 
         }
     }
 
-    // her er hoveddelen af al koden
-    private async void WineSysLoop()
+    // her er hoveddelen af al koden, async er en "tråd" kører som en task der startes i main
+    // static er scope, fordi main er static skal ting der bruges enten have en reference til object
+    // eller selv være sat op til at være static
+    private static async Task WineSysLoop()
     {
-        // sætter vinduet til at være det største den kan være
-        
-        //Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
-
         // skriver vores intro
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine(asciiart);
-        
+
         // venter 3 sekunder og derefter så clear vi console så de er klar igen
         await Task.Delay(3000);
         Console.Clear();
@@ -109,38 +111,36 @@ public class WineSysMain
         // her begynder vi et uendeligt loop (den er aldrig "ikke true") for at programmer kører for "evigt"
         while (true)
         {
-            // vi rydder indholdet i boxen og tilføjer indholdet
+            // vi rydder indholdet i boxen og tilføjer indholdet, gøres flere steder herunder
             boxLager.Clear();
             foreach (Wine wine in stock.WinesOnStock())
             {
                 boxLager.WriteLine("\n" + wine.WineName);
             }
 
-            // vi rydder indholdet i boxen og tilføjer indholdet
             boxAntal.Clear();
             foreach (Wine wine in stock.WinesOnStock())
             {
                 boxAntal.WriteLine("\n" + wine.NumInStock.ToString());
             }
 
-            // vi rydder indholdet i boxen og tilføjer indholdet
             boxIndkøbspris.Clear();
             foreach (Wine wine in stock.WinesOnStock())
             {
                 boxIndkøbspris.WriteLine("\n" + wine.PurchasePrice.ToString("00.00") + " DKK");
-            }                
+            }
 
             boxAvance.Clear();
             foreach (Wine wine in stock.WinesOnStock())
             {
                 boxAvance.WriteLine("\n" + (wine.PurchasePrice * wine.MarkUp).ToString("0.00") + " DKK" + " | " + wine.MarkUp * 100 + "%");
-            }                
+            }
 
             boxLagerHigh.Clear();
             foreach (Wine wine in stock.StockOverThreshold())
             {
                 boxLagerHigh.WriteLine(wine.WineName);
-            }                
+            }
 
             boxLagerLow.Clear();
             foreach (Wine wine in stock.StockUnderThreshold())
@@ -190,164 +190,15 @@ public class WineSysMain
             var feed = await FeedReader.ReadAsync("https://www.dr.dk/nyheder/service/feeds/senestenyt");
             boxRSS.Clear();
 
-            for(int i = 0; i < feed.Items.Count; i++)
-            {
-                await Task.Delay(250);
-                boxRSS.WriteLine((i+1) +"/" + feed.Items.Count + " " + feed.Items[i].Title + "\n");
-            }
-
-            //await Task.Delay(20);
-        }
-    }
-
-    private void WineSysLoop_EKN()
-    {
-        // sætter vinduet til at være det største den kan være
-
-        //Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
-
-        // skriver vores intro
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine(asciiart);
-
-        // venter 3 sekunder og derefter så clear vi console så de er klar igen
-        Thread.Sleep(3000);
-        Console.Clear();
-
-        // set color of text and background (necessary?)
-        Console.ForegroundColor = ConsoleColor.White;
-        Console.BackgroundColor = ConsoleColor.Black;
-
-        // setup timezones, used for automatically converting between "our" time and different zones
-        TimeZoneInfo dkTime = TimeZoneInfo.FindSystemTimeZoneById("Romance Standard Time");
-        TimeZoneInfo caliTime = TimeZoneInfo.FindSystemTimeZoneById("Pacific Standard Time");
-        TimeZoneInfo ausTime = TimeZoneInfo.FindSystemTimeZoneById("W. Australia Standard Time");
-
-        // get the current date/time
-        DateTime utcNow = DateTime.UtcNow;
-
-        // opret nye variable som konverterer den nuværende tid til de nye tidszoner
-        // dette er en lidt større metode, man kunne bare have +/- de rigtige antal timer og få samme resultat
-        DateTime dkTimeNow = TimeZoneInfo.ConvertTimeFromUtc(utcNow, dkTime);
-        DateTime caliTimeNow = TimeZoneInfo.ConvertTimeFromUtc(utcNow, caliTime);
-        DateTime ausTimeNow = TimeZoneInfo.ConvertTimeFromUtc(utcNow, ausTime);
-
-        // da vi bruger den samme style til alle bokse, så opretter vi en variable som indeholder 
-        // den samme stil, her sætter vi thickness og og title colors
-        BoxStyle ourStyle = new BoxStyle();
-        ourStyle.ThickNess = LineThickNess.Double;
-        ourStyle.Title = new Colors(ConsoleColor.White, ConsoleColor.Red);
-
-        // definer de forskellige bokse fra Konsole, tallene er bredde og højde, 
-        var boxLager = Window.OpenBox("Lagerbeholdning", 55, 2, 50, 30, ourStyle);
-        var boxLagerHigh = Window.OpenBox("Lagerbeholdning for høj", 5, 2, 50, 17, ourStyle);
-        var boxLagerLow = Window.OpenBox("Lagerbeholdning for lav", 5, 19, 50, 13, ourStyle);
-        var boxAntal = Window.OpenBox("Antal", 105, 2, 15, 30, ourStyle);
-        var boxIndkøbspris = Window.OpenBox("Indkøbspris", 120, 2, 15, 30, ourStyle);
-        var boxAvance = Window.OpenBox("Avance", 135, 2, 20, 30, ourStyle);
-        var boxTemperature = Window.OpenBox("Temperatur", 5, 32, 25, 6, ourStyle);
-        var boxHumidity = Window.OpenBox("Luftfugtighed", 30, 32, 25, 6, ourStyle);
-        var boxClock = Window.OpenBox("Klokken", 55, 32, 50, 6, ourStyle);
-        var boxRSS = Window.OpenBox("Seneste nyt fra DR.dk", 105, 32, 50, 6, ourStyle);
-
-        // her bruger vi den API fra den "using DVI_Access_Lib" til at hente de data ned fra cloud
-        DVI_Climate climate = new DVI_Climate("http://docker.data.techcollege.dk:5051");
-        DVI_Stock stock = new DVI_Stock("http://docker.data.techcollege.dk:5051");
-
-        // her begynder vi et uendeligt loop (den er aldrig "ikke true") for at programmer kører for "evigt"
-        while (true)
-        {
-            // vi rydder indholdet i boxen og tilføjer indholdet
-            boxLager.Clear();
-            foreach (Wine wine in stock.WinesOnStock())
-            {
-                boxLager.WriteLine("\n" + wine.WineName);
-            }
-
-            // vi rydder indholdet i boxen og tilføjer indholdet
-            boxAntal.Clear();
-            foreach (Wine wine in stock.WinesOnStock())
-            {
-                boxAntal.WriteLine("\n" + wine.NumInStock.ToString());
-            }
-
-            // vi rydder indholdet i boxen og tilføjer indholdet
-            boxIndkøbspris.Clear();
-            foreach (Wine wine in stock.WinesOnStock())
-            {
-                boxIndkøbspris.WriteLine("\n" + wine.PurchasePrice.ToString("00.00") + " DKK");
-            }
-
-            boxAvance.Clear();
-            foreach (Wine wine in stock.WinesOnStock())
-            {
-                boxAvance.WriteLine("\n" + (wine.PurchasePrice * wine.MarkUp).ToString("0.00") + " DKK" + " | " + wine.MarkUp * 100 + "%");
-            }
-
-            boxLagerHigh.Clear();
-            foreach (Wine wine in stock.StockOverThreshold())
-            {
-                boxLagerHigh.WriteLine(wine.WineName);
-            }
-
-            boxLagerLow.Clear();
-            foreach (Wine wine in stock.StockUnderThreshold())
-            {
-                boxLagerLow.WriteLine(wine.WineName);
-            }
-
-            boxClock.Clear();
-            boxClock.WriteLine("Danmark " + "    " + dkTimeNow + "\n" + "Californien " + caliTimeNow + "\n" + "Australien " + " " + ausTimeNow);
-
-            boxTemperature.Clear();
-            boxTemperature.WriteLine(climate.CurrTemp().ToString("0.0") + "°");
-
-            boxHumidity.Clear();
-            boxHumidity.WriteLine(climate.CurrHum().ToString("0.0") + "%");
-
-            if (climate.CurrTemp() < climate.MinTemp())
-            {
-                boxTemperature.WriteLine(ConsoleColor.Red, "LAV TEMP!");
-                DoBeeps();
-            }
-            else if (climate.CurrTemp() > climate.MaxTemp())
-            {
-                boxTemperature.WriteLine(ConsoleColor.Red, "HØJ TEMP!");
-                DoBeeps();
-            }
-            else
-            {
-                boxTemperature.WriteLine(ConsoleColor.Green, "ALT I ORDEN!");
-            }
-
-            if (climate.CurrHum() < climate.MinHum())
-            {
-                boxHumidity.WriteLine(ConsoleColor.Red, "LAV HUM!");
-                DoBeeps();
-            }
-            else if (climate.CurrTemp() > climate.MaxHum())
-            {
-                boxHumidity.WriteLine(ConsoleColor.Red, "HØJ HUM!");
-                DoBeeps();
-            }
-            else
-            {
-                boxHumidity.WriteLine(ConsoleColor.Green, "ALT I ORDEN!");
-            }
-
-            var feed = FeedReader.ReadAsync("https://www.dr.dk/nyheder/service/feeds/senestenyt");
-            boxRSS.Clear();
-
             for (int i = 0; i < feed.Items.Count; i++)
             {
-                Thread.Sleep(3000);
+                await Task.Delay(rssWaitTime);
                 boxRSS.WriteLine((i + 1) + "/" + feed.Items.Count + " " + feed.Items[i].Title + "\n");
             }
 
             //await Task.Delay(20);
         }
     }
-
 
     // dette stykke kode blev repeteret ofte og er derfor lavet til sin egen metode
     // metoden laver bare 10 beeps
