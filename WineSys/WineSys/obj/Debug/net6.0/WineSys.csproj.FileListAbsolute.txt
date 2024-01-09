@@ -67,3 +67,26 @@ C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\System.Text.Json.dll
 C:\gf2\winesys\WineSys\WineSys\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\gf2\winesys\WineSys\WineSys\obj\Debug\net6.0\WineSys.genruntimeconfig.cache
+C:\rnd c\NEO WINESYS\WineSys\WineSys\obj\Debug\net6.0\WineSys.csproj.AssemblyReference.cache
+C:\rnd c\NEO WINESYS\WineSys\WineSys\obj\Debug\net6.0\WineSys.GeneratedMSBuildEditorConfig.editorconfig
+C:\rnd c\NEO WINESYS\WineSys\WineSys\obj\Debug\net6.0\WineSys.AssemblyInfoInputs.cache
+C:\rnd c\NEO WINESYS\WineSys\WineSys\obj\Debug\net6.0\WineSys.AssemblyInfo.cs
+C:\rnd c\NEO WINESYS\WineSys\WineSys\obj\Debug\net6.0\WineSys.csproj.CoreCompileInputs.cache
+C:\rnd c\NEO WINESYS\WineSys\WineSys\obj\Debug\net6.0\WineSys.dll
+C:\rnd c\NEO WINESYS\WineSys\WineSys\obj\Debug\net6.0\refint\WineSys.dll
+C:\rnd c\NEO WINESYS\WineSys\WineSys\obj\Debug\net6.0\WineSys.pdb
+C:\rnd c\NEO WINESYS\WineSys\WineSys\bin\Debug\net6.0\WineSys.exe
+C:\rnd c\NEO WINESYS\WineSys\WineSys\bin\Debug\net6.0\WineSys.deps.json
+C:\rnd c\NEO WINESYS\WineSys\WineSys\bin\Debug\net6.0\WineSys.runtimeconfig.json
+C:\rnd c\NEO WINESYS\WineSys\WineSys\bin\Debug\net6.0\WineSys.dll
+C:\rnd c\NEO WINESYS\WineSys\WineSys\bin\Debug\net6.0\WineSys.pdb
+C:\rnd c\NEO WINESYS\WineSys\WineSys\bin\Debug\net6.0\CodeHollow.FeedReader.dll
+C:\rnd c\NEO WINESYS\WineSys\WineSys\bin\Debug\net6.0\Goblinfactory.Konsole.dll
+C:\rnd c\NEO WINESYS\WineSys\WineSys\bin\Debug\net6.0\Goblinfactory.Konsole.Platform.Windows.dll
+C:\rnd c\NEO WINESYS\WineSys\WineSys\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\rnd c\NEO WINESYS\WineSys\WineSys\bin\Debug\net6.0\System.Text.Json.dll
+C:\rnd c\NEO WINESYS\WineSys\WineSys\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\rnd c\NEO WINESYS\WineSys\WineSys\bin\Debug\net6.0\DVI_Access_Lib.dll
+C:\rnd c\NEO WINESYS\WineSys\WineSys\obj\Debug\net6.0\WineSys.csproj.CopyComplete
+C:\rnd c\NEO WINESYS\WineSys\WineSys\obj\Debug\net6.0\WineSys.genruntimeconfig.cache
+C:\rnd c\NEO WINESYS\WineSys\WineSys\obj\Debug\net6.0\ref\WineSys.dll

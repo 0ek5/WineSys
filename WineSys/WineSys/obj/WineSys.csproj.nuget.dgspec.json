@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\gf2\\winesys\\WineSys\\WineSys\\WineSys.csproj": {}
+    "C:\\rnd c\\NEO WINESYS\\WineSys\\WineSys\\WineSys.csproj": {}
   },
   "projects": {
-    "C:\\gf2\\winesys\\WineSys\\WineSys\\WineSys.csproj": {
+    "C:\\rnd c\\NEO WINESYS\\WineSys\\WineSys\\WineSys.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\gf2\\winesys\\WineSys\\WineSys\\WineSys.csproj",
+        "projectUniqueName": "C:\\rnd c\\NEO WINESYS\\WineSys\\WineSys\\WineSys.csproj",
         "projectName": "WineSys",
-        "projectPath": "C:\\gf2\\winesys\\WineSys\\WineSys\\WineSys.csproj",
+        "projectPath": "C:\\rnd c\\NEO WINESYS\\WineSys\\WineSys\\WineSys.csproj",
         "packagesPath": "C:\\Users\\TKemi\\.nuget\\packages\\",
-        "outputPath": "C:\\gf2\\winesys\\WineSys\\WineSys\\obj\\",
+        "outputPath": "C:\\rnd c\\NEO WINESYS\\WineSys\\WineSys\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\TKemi\\AppData\\Roaming\\NuGet\\NuGet.Config",

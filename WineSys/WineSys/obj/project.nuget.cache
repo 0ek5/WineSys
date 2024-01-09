@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n/E78Ll1EQKT61+dec8lzMMrRGpBEib2EVu9dELqNzT1kRcOWihM+XoYFEkBB3m3p9GL0zVeSSQOAAV37AXgQQ==",
+  "dgSpecHash": "REldx9Ajz3Q4zt++WV0tReM4vxqIc0zFF9GIGjh83RDePXoKMwjueys0W5qdOH2jMwee1rl+Fl0yMrLNgE6QNQ==",
   "success": true,
-  "projectFilePath": "C:\\gf2\\winesys\\WineSys\\WineSys\\WineSys.csproj",
+  "projectFilePath": "C:\\rnd c\\NEO WINESYS\\WineSys\\WineSys\\WineSys.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TKemi\\.nuget\\packages\\codehollow.feedreader\\1.2.6\\codehollow.feedreader.1.2.6.nupkg.sha512",
     "C:\\Users\\TKemi\\.nuget\\packages\\goblinfactory.konsole\\6.2.2\\goblinfactory.konsole.6.2.2.nupkg.sha512",
